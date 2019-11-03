@@ -1,0 +1,380 @@
+@import url("../../switcher/switcher.css");
+.work-steps {
+  width: 100%;
+  height: auto;
+  background: #131313;
+}
+
+@media only screen and (max-width: 768px) {
+  .work-steps {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .work-steps {
+    display: none;
+  }
+}
+
+.work-steps--wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 100%;
+  height: 686px;
+  margin-top: 392px;
+}
+
+@media only screen and (max-width: 768px) {
+  .work-steps--wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    margin-top: 92px;
+  }
+}
+
+.work-steps--steps {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 100px;
+  width: 23.40%;
+  max-width: 337px;
+  height: 590px;
+}
+
+@media only screen and (max-width: 768px) {
+  .work-steps--steps {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 80%;
+    margin: 0;
+  }
+}
+
+.work-steps--headline {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: 100px;
+}
+
+@media only screen and (max-width: 768px) {
+  .work-steps--headline {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+}
+
+.work-steps--headline-desc {
+  font-family: "FuturaDemiC";
+  font-size: 15px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.work-steps--headline-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 90.2%;
+  height: 66px;
+}
+
+@media only screen and (max-width: 768px) {
+  .work-steps--headline-wrapper {
+    width: 100%;
+  }
+}
+
+.work-steps--headline-text {
+  font-family: "Yeseva One";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 27px;
+  line-height: 37px;
+  text-transform: uppercase;
+  color: #E3B873;
+}
+
+@media only screen and (max-width: 768px) {
+  .work-steps--headline-text {
+    width: 100%;
+  }
+}
+
+.work-steps--headline-img {
+  width: 92px;
+  height: 1px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin-bottom: 13px;
+  background: #E3B873;
+}
+
+@media only screen and (max-width: 768px) {
+  .work-steps--headline-img {
+    display: none;
+  }
+}
+
+.work-steps--step {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: 323px;
+}
+
+@media only screen and (max-width: 768px) {
+  .work-steps--step {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.work-steps--step-number {
+  width: 34px;
+  height: 21px;
+}
+
+.work-steps--number {
+  font-family: "Yeseva One";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.work-steps--step-headline {
+  width: 77.74%;
+  height: 21px;
+}
+
+.work-steps--step-header {
+  font-family: "Yeseva One";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 23px;
+  text-transform: uppercase;
+  color: #E3B873;
+}
+
+.work-steps--step-description {
+  width: 100%;
+  height: 222px;
+  font-family: "FuturaBookC";
+  font-size: 15px;
+  line-height: 25px;
+  color: #fff;
+}
+
+.work-steps--description-text {
+  font-family: "FuturaBookC";
+  font-size: 15px;
+  line-height: 25px;
+  color: #fff;
+}
+
+.work-steps--switcher-block {
+  width: 85.16%;
+}
+
+.work-steps--steps-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  width: 53.19%;
+  max-width: 766px;
+  height: auto;
+  max-height: 600px;
+  margin-right: 6.94%;
+}
+
+@media only screen and (max-width: 768px) {
+  .work-steps--steps-list {
+    display: none;
+  }
+}
+
+.work-steps--lists {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 178px;
+  padding-bottom: 5.5%;
+}
+
+.work-steps--list-col1, .work-steps--list-col2, .work-steps--list-col3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 136px;
+  height: 100%;
+}
+
+.work-steps--list-col1:nth-child(3), .work-steps--list-col2:nth-child(3), .work-steps--list-col3:nth-child(3) {
+  width: 100px;
+}
+
+.work-steps--item {
+  height: 71px;
+  color: #fff;
+  opacity: .6;
+}
+
+.work-steps--item:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+
+.work-steps--item-number {
+  width: 20px;
+  border-bottom: 1px solid #E3B873;
+  font-family: "Yeseva One";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+
+.work-steps--item-description {
+  font-family: "FuturaBookC";
+  font-size: 15px;
+  line-height: 18px;
+}
+
+.work-steps--img-example {
+  width: 100%;
+  height: auto;
+}
+
+.work-steps--img {
+  width: 100%;
+  height: 100%;
+}
+
+.work-steps--image {
+  width: 100%;
+  height: 100%;
+}
+/*# sourceMappingURL=work-steps.css.map */

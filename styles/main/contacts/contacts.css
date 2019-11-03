@@ -1,0 +1,109 @@
+.contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: 130px;
+  margin-top: 250px;
+}
+
+@media only screen and (max-width: 768px) {
+  .contacts {
+    margin-top: 250px;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .contacts {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    height: 130px;
+    background: #232323;
+    margin-top: 0;
+  }
+}
+
+.contacts--main-contacts {
+  width: 40.90%;
+  max-width: 589px;
+  height: 51px;
+  font-family: "Yeseva One";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #E3B873;
+}
+
+@media only screen and (max-width: 960px) {
+  .contacts--main-contacts {
+    width: 100%;
+    height: 70.56px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .contacts--main-contacts {
+    width: 95.23%;
+    height: 70.56px;
+  }
+}
+
+.contacts--social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 4.93%;
+  min-width: 71px;
+  height: 28px;
+}
+
+.contacts--item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 14px;
+  background: #E3B873;
+}
+
+.contacts--link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 28px;
+  height: 28px;
+}
+/*# sourceMappingURL=contacts.css.map */

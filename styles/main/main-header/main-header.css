@@ -1,0 +1,353 @@
+.main-header {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 707px;
+}
+
+@media only screen and (max-width: 375px) {
+  .main-header {
+    height: 476px;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../../../assets/images/background/main-header-mobile-bg.png");
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../../assets/images/background/main-header-mobile-bg.png");
+  }
+}
+
+.main-header--offer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 94.4%;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../../../assets/images/background/main-offer-bg.png");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../../assets/images/background/main-offer-bg.png");
+  background-size: cover;
+}
+
+@media only screen and (max-width: 768px) {
+  .main-header--offer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../../../assets/images/background/main-offer-bg.png");
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../../assets/images/background/main-offer-bg.png");
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .main-header--offer {
+    background: 0;
+    width: 95.23%;
+  }
+}
+
+.main-header--offer-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 38.78%;
+  height: 300px;
+  margin-left: 4.41%;
+}
+
+@media only screen and (max-width: 768px) {
+  .main-header--offer-details {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 80%;
+    height: 80%;
+    margin-left: 0;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .main-header--offer-details {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    height: 80%;
+    margin-left: 0;
+  }
+}
+
+.main-header--btn-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 84.27%;
+  height: 51px;
+}
+
+@media only screen and (max-width: 375px) {
+  .main-header--btn-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-item-align: center;
+        align-self: center;
+    width: 95.23%;
+    height: 128px;
+  }
+}
+
+.main-header--offer-btn {
+  width: 47.7%;
+  height: 51px;
+  font-family: "FuturaDemiC";
+  font-size: 13px;
+  line-height: 15px;
+  text-align: center;
+  color: #fff;
+}
+
+@media only screen and (max-width: 375px) {
+  .main-header--calc-btn {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    width: 100%;
+    height: 51px;
+  }
+}
+
+.main-header--application-btn {
+  border-radius: 2px;
+  border: 1px solid #fff;
+  background: none;
+}
+
+@media only screen and (max-width: 375px) {
+  .main-header--application-btn {
+    display: none;
+  }
+}
+
+.main-header--application-btn:hover {
+  cursor: pointer;
+}
+
+.main-header--application-mobile-btn {
+  display: none;
+}
+
+@media only screen and (max-width: 375px) {
+  .main-header--application-mobile-btn {
+    display: block;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    width: 100%;
+    height: 51px;
+    background: 0;
+    border-radius: 2px;
+    border: 1px solid #fff;
+  }
+}
+
+.main-header--headline {
+  font-family: "Yeseva One";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 53px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+@media only screen and (max-width: 375px) {
+  .main-header--headline {
+    padding-right: 15.88%;
+    font-family: "Yeseva One";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 23px;
+    line-height: 132.83%;
+    text-transform: uppercase;
+    color: #fff;
+  }
+}
+
+.main-header--city {
+  color: #E3B873;
+}
+
+.main-header--description {
+  font-family: "FuturaBookC";
+  font-size: 22px;
+  line-height: 30px;
+  color: #fff;
+}
+
+@media only screen and (max-width: 375px) {
+  .main-header--description {
+    padding-right: 15.88%;
+    font-family: "FuturaBookC";
+    font-size: 18px;
+    line-height: 135.84%;
+    color: #fff;
+  }
+}
+
+.scroll-bar {
+  position: absolute;
+  top: 656px;
+  left: 0;
+  z-index: 10;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 17.15%;
+  max-width: 247px;
+  height: 97px;
+  background: #131313;
+}
+
+@media only screen and (max-width: 768px) {
+  .scroll-bar {
+    display: none;
+  }
+}
+
+.scroll-bar--text {
+  padding-right: 20px;
+  font-family: "Yeseva One";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.scroll-bar:hover {
+  cursor: pointer;
+}
+
+.instagram {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 82px;
+  height: 707px;
+  background: #131313;
+}
+
+@media only screen and (max-width: 768px) {
+  .instagram {
+    display: none;
+  }
+}
+
+.instagram--link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 174px;
+  height: 20px;
+  text-decoration: none;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.instagram--text {
+  width: 89px;
+  height: 13px;
+  margin-right: 8px;
+  font-family: "FuturaDemiC";
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  color: #E3B873;
+}
+
+.instagram--img {
+  height: 1.54px;
+  width: 51px;
+  background: #E3B873;
+}
+/*# sourceMappingURL=main-header.css.map */

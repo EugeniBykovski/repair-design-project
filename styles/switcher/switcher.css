@@ -1,0 +1,31 @@
+.switcher {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+}
+
+.switcher--circle {
+    width: 9.57px;
+    height: 9.57px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.switcher--circle_enabled {
+    background: white;
+}
+
+.switcher--circle:hover {
+    cursor: pointer;
+}
+
+.switcher--arrow:hover {
+    cursor: pointer;
+}

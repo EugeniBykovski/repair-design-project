@@ -1,0 +1,185 @@
+@import '../../variables';
+
+.questions{
+    @include flex();
+    
+    width: 100%;
+    height: 340px;
+    background: $main-bg2;
+    @media only screen and (max-width: 375px){
+        @include flex-column(center);
+        width: 100%;
+        height: 497px;
+        background: $mobile-bg;
+    }
+
+    &--form-wrapper{
+        position: relative;
+        top: 165px;
+        @include flex-column($around);
+        width: 61.34%;
+        max-width: 883px;
+        height: 445px;
+        background: $main-bg1;
+        @media only screen and (max-width: 768px){
+            @include flex-column(center);
+            width: 100%;
+            height: auto;
+        }
+        @media only screen and (max-width: 375px){
+            
+            position: static;
+            @include flex-column(space-around);
+            width: 95.23%;
+            height: 100%;
+            background: 0;
+        }
+    }
+
+    &--headline{
+        width: 58.89%;
+        height: 26px;
+        margin-top: 34px;
+
+        font-family: "Yeseva One";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 28px;
+        text-align: center;
+        text-transform: uppercase;
+
+        color: #fff;
+        @media only screen and (max-width: 768px){
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        @media only screen and (max-width: 375px){
+            width: 100%;
+        }
+    }
+    
+    &--form{
+        @include flex-column();
+        width: 58.89%;
+        height: 304.71px;
+        
+        margin-bottom: 34px;
+        
+        @media only screen and (max-width: 375px){
+            @include flex-column(space-between);
+            width: 100%;
+            height: 420px;
+        }
+
+        .label-style{
+            width: 100%;
+            height: auto;
+
+            font-size: 15px;
+            line-height: 20px;
+            color: rgba(255, 255, 255, 0.5);
+            &--input-text{
+                width: 100%;
+                color: #fff;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+                &::placeholder{
+                    color: #fff;
+                }
+            }
+        }
+    }
+
+    &--from-who{
+        @include flex(space-between);
+        width: 100%;
+        height: 45px;
+        @media only screen and (max-width: 375px){
+            @include flex-column(space-between);
+            width: 100%;
+            height: 153px;
+        }
+        .label-style{
+            width: 45%;
+            font-size: 15px;
+            line-height: 20px;
+
+            color: rgba(255, 255, 255, 0.5);
+            height: auto;
+            &--input-text{
+                width: 100%;
+                color: #fff;
+                &::placeholder{
+                    color: #fff;
+                }
+            }
+            @media only screen and (max-width: 375px){
+                width: 100%;
+            }
+        }
+    }
+
+    &--agree{
+        @include flex(space-between);
+        width: 54.92%;
+        max-width: 285.62px;
+        height: 18px;
+        @media only screen and (max-width: 768px){
+            width: 100%;
+        }
+        @media only screen and (max-width: 375px){
+            width: 100%;
+            align-self: $start;
+        }
+    }
+
+    &--label-checkbox{
+        @include flex(space-between);
+
+        width: 100%;
+        height: 100%;
+        &::before{
+            content: "";
+            width: 18px;
+            height: 18px;
+            background-image: url("../../../assets/images/icon/cb-icon.png");
+        }
+        &:hover{
+            cursor: pointer;
+        }
+    }
+    &--checkbox{
+        visibility: hidden;
+        margin: 0;
+    }
+    &--checkbox-text{
+        width: 90.67%;
+
+        font-family: "FuturaBookC";
+        font-size: 15px;
+        line-height: 22px;
+
+        color: #fff;
+    }
+    &--submit-btn{
+        width: 38.46%;
+        max-width: 200px;
+        height: 51px;
+        
+        font-family: "FuturaDemiC";
+        font-size: 15px;
+        line-height: 26px;
+        text-align: center;
+        text-transform: uppercase;
+
+        background: #E3B873;
+        box-shadow: 0px 5px 20px rgba(227, 184, 115, 0.1);
+
+        color: #fff;
+        @media only screen and (max-width: 375px){
+            width: 100%;
+            max-width: 100%;
+            height: 51px;
+        }
+    }
+}

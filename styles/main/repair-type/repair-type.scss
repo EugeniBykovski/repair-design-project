@@ -1,0 +1,61 @@
+@import '../../variables';
+
+.repair-type{
+    @media only screen and (max-width: 375px){
+        
+        @include flex-column(space-between);
+        padding-top: 54px;
+        height: 1900px;
+        background: $main-bg2;
+    }
+    @include flex-column();
+
+    width: 100%;
+    height: auto;
+    background: $main-bg2;
+
+    &--header{
+        @include flex-column();
+
+        width: 100%;
+        height: auto;
+        margin-bottom: 4.4%;
+
+        @media only screen and (max-width: 375px){
+            @include flex-column();
+            width: 75.58%;
+
+        }
+    }
+
+    &--example{
+        @include flex(space-between);
+
+        width: 85.83%;
+        height: 608px;        
+        @media only screen and (max-width: 768px){            
+            @include flex-column(space-between);
+
+            width: 100%;
+            height: auto;
+        }
+        @media only screen and (max-width: 375px){            
+            @include flex-column(space-between);
+
+            width: 95.23%;
+            height: 1800px;
+            z-index: 20;
+        }
+
+    }
+
+    &--headline{
+        margin-bottom: 5px;
+        font-family: "Yeseva One";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 28px;
+        text-transform: uppercase;
+    }
+}

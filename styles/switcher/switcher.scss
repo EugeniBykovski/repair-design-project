@@ -1,0 +1,23 @@
+@import '../variables';
+.switcher{
+    @include flex(space-between);
+    width: 100%;
+    &--circle{
+        width: 9.57px;
+        height: 9.57px;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.3);
+
+        &_enabled{
+            background: rgba(255, 255, 255, 1);
+        }
+        &:hover{
+            cursor: pointer;
+        }
+
+    }
+
+    &--arrow:hover{
+        cursor: pointer;
+    }
+}

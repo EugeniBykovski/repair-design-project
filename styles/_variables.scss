@@ -1,0 +1,20 @@
+$mobile-bg: #232323;
+$main-bg1: #131313;
+$main-bg2: #fff;
+
+$start: flex-start;
+$end: flex-end;
+$between: space-between;
+$around: space-around;
+@mixin flex($justify: center, $align: center){
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin flex-column($justify: space-between, $align: center, $direction: column){
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+}

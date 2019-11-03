@@ -1,0 +1,232 @@
+@import '../../variables';
+
+.main-header{
+    @media only screen and (max-width: 375px){
+        height: 476px;
+        background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url('../../../assets/images/background/main-header-mobile-bg.png');
+    }
+    position: relative;
+    @include flex();
+
+    width: 100%;
+    height: 707px;
+
+    &--offer{
+        @include flex(flex-start);
+
+        width: 94.4%;
+        height: 100%;
+
+        background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url('../../../assets/images/background/main-offer-bg.png');
+        background-size: cover;
+
+        @media only screen and (max-width: 768px){
+            @include flex();
+            background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url('../../../assets/images/background/main-offer-bg.png');
+            width: 100%;
+        }
+        @media only screen and (max-width: 375px){
+            background: 0;
+            width: 95.23%;
+        }
+
+        &-details{
+            @include flex-column($align: flex-start);
+
+            width: 38.78%;
+            height: 300px;
+            margin-left: 4.41%;
+            @media only screen and (max-width: 768px){
+                @include flex-column(space-around);
+                width: 80%;
+                height: 80%;
+                margin-left: 0;
+            }
+            @media only screen and (max-width: 375px){
+                @include flex-column(space-around, flex-start);
+                width: 100%;
+                height: 80%;
+                margin-left: 0;
+            }
+        }
+    }
+
+    &--btn-block{
+        @media only screen and (max-width: 375px){
+            @include flex-column();
+            align-self: center;
+            width: 95.23%;
+            height: 128px;
+        }
+
+        @include flex(space-between);
+        width: 84.27%;
+        height: 51px;
+    }
+
+    &--offer-btn{
+        width: 47.7%;
+        height: 51px;
+
+        font-family: "FuturaDemiC";
+        font-size: 13px;
+        line-height: 15px;
+        text-align: center;
+
+        color: #fff;
+    }
+
+    &--calc-btn{
+        @media only screen and (max-width: 375px){
+            order: 2;
+            width: 100%;
+            height: 51px;
+        }
+    }
+
+    &--application-btn{
+        @media only screen and (max-width: 375px){
+            display: none;
+        }
+        border-radius: 2px;
+        border: 1px solid #fff;
+        background: none;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+
+    &--application-mobile-btn{       
+        @media only screen and (max-width: 375px){
+            display: block;
+            order: 2;
+            width: 100%;
+            height: 51px;
+            background: 0;
+            border-radius: 2px;
+            border: 1px solid #fff;
+        }
+        
+        display: none;
+    }
+    &--headline{
+        font-family: "Yeseva One";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 40px;
+        line-height: 53px;
+        text-transform: uppercase;
+
+        color: #fff;
+
+        @media only screen and (max-width: 375px){
+            padding-right: 15.88%;
+            
+            font-family: "Yeseva One";
+            font-style: normal;
+            font-weight: normal;
+            font-size: 23px;
+            line-height: 132.83%;
+            text-transform: uppercase;
+
+            color: #fff;
+        }
+    }
+
+    &--city{
+        color: #E3B873;
+    }
+
+    &--description{
+        font-family: "FuturaBookC";
+        font-size: 22px;
+        line-height: 30px;
+
+        color: #fff;
+
+        @media only screen and (max-width: 375px){
+            padding-right: 15.88%;
+            font-family: "FuturaBookC";
+            font-size: 18px;
+            line-height: 135.84%;
+
+            color: #fff;
+        }
+    }
+}
+
+.scroll-bar{
+    @media only screen and (max-width: 768px) {
+        display: none;
+    }
+
+    position: absolute;
+    top: 656px;
+    left: 0;
+    z-index: 10;
+
+    @include flex();
+
+    width: 17.15%;
+    max-width: 247px;
+    height: 97px;
+
+    background: $main-bg1;
+
+    &--text{
+        padding-right: 20px;
+        font-family: "Yeseva One";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 19px;
+        text-transform: uppercase;
+
+        color: #fff;
+    }
+
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+.instagram{
+    @include flex();
+    @media only screen and (max-width: 768px) {
+        display: none;
+    }
+    width: 82px;
+    height: 707px;
+
+    background: $main-bg1;
+
+    &--link{
+        @include flex(space-between);
+
+        width: 174px;
+        height: 20px;
+
+        text-decoration: none;
+        transform: rotate(90deg);
+    }
+
+    &--text{
+        width: 89px;
+        height: 13px;
+        margin-right: 8px;
+
+        font-family: "FuturaDemiC";
+        font-size: 14px;
+        line-height: 16px;
+        text-align: center;
+
+        color: #E3B873;
+    }
+
+    &--img{
+        height: 1.54px;
+        width: 51px;
+        background: #E3B873;
+    }
+    
+}

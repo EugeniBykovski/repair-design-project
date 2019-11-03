@@ -1,0 +1,64 @@
+@import '../../variables';
+
+.contacts{
+    @include flex-column(space-around);
+    width: 100%;
+    height: 130px;
+    margin-top: 250px;
+    @media only screen and (max-width: 768px){
+        margin-top: 250px;
+        height: auto;
+    }
+    @media only screen and (max-width: 375px){
+        order: 2;
+        height: 130px;
+        background: $mobile-bg;
+        margin-top: 0;
+    }
+    &--main-contacts{
+        width: 40.90%;
+        max-width: 589px;
+        height: 51px;
+
+        font-family: "Yeseva One";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 28px;
+        text-align: center;
+        text-transform: uppercase;
+
+        color: #E3B873;
+
+        @media only screen and (max-width: 960px){
+            width: 100%;
+            height: 70.56px;
+        }
+        @media only screen and (max-width: 375px){
+            width: 95.23%;
+            height: 70.56px;
+        }
+    }
+
+    &--social{
+        @include flex(space-between);
+        width: 4.93%;
+        min-width: 71px;
+        height: 28px;
+    }
+    &--item{
+        @include flex();
+        width: 28px;
+        height: 28px;
+
+        border-radius: 14px;
+        background: #E3B873;
+    }
+
+    &--link{
+        @include flex();
+        width: 28px;
+        height: 28px;
+        
+    }
+}

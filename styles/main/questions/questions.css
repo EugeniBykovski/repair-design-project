@@ -1,0 +1,353 @@
+.questions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 340px;
+  background: #fff;
+}
+
+@media only screen and (max-width: 375px) {
+  .questions {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    height: 497px;
+    background: #232323;
+  }
+}
+
+.questions--form-wrapper {
+  position: relative;
+  top: 165px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 61.34%;
+  max-width: 883px;
+  height: 445px;
+  background: #131313;
+}
+
+@media only screen and (max-width: 768px) {
+  .questions--form-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .questions--form-wrapper {
+    position: static;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 95.23%;
+    height: 100%;
+    background: 0;
+  }
+}
+
+.questions--headline {
+  width: 58.89%;
+  height: 26px;
+  margin-top: 34px;
+  font-family: "Yeseva One";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+@media only screen and (max-width: 768px) {
+  .questions--headline {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .questions--headline {
+    width: 100%;
+  }
+}
+
+.questions--form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 58.89%;
+  height: 304.71px;
+  margin-bottom: 34px;
+}
+
+@media only screen and (max-width: 375px) {
+  .questions--form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    height: 420px;
+  }
+}
+
+.questions--form .label-style {
+  width: 100%;
+  height: auto;
+  font-size: 15px;
+  line-height: 20px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.questions--form .label-style--input-text {
+  width: 100%;
+  color: #fff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.questions--form .label-style--input-text::-webkit-input-placeholder {
+  color: #fff;
+}
+
+.questions--form .label-style--input-text:-ms-input-placeholder {
+  color: #fff;
+}
+
+.questions--form .label-style--input-text::-ms-input-placeholder {
+  color: #fff;
+}
+
+.questions--form .label-style--input-text::placeholder {
+  color: #fff;
+}
+
+.questions--from-who {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 45px;
+}
+
+@media only screen and (max-width: 375px) {
+  .questions--from-who {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    height: 153px;
+  }
+}
+
+.questions--from-who .label-style {
+  width: 45%;
+  font-size: 15px;
+  line-height: 20px;
+  color: rgba(255, 255, 255, 0.5);
+  height: auto;
+}
+
+.questions--from-who .label-style--input-text {
+  width: 100%;
+  color: #fff;
+}
+
+.questions--from-who .label-style--input-text::-webkit-input-placeholder {
+  color: #fff;
+}
+
+.questions--from-who .label-style--input-text:-ms-input-placeholder {
+  color: #fff;
+}
+
+.questions--from-who .label-style--input-text::-ms-input-placeholder {
+  color: #fff;
+}
+
+.questions--from-who .label-style--input-text::placeholder {
+  color: #fff;
+}
+
+@media only screen and (max-width: 375px) {
+  .questions--from-who .label-style {
+    width: 100%;
+  }
+}
+
+.questions--agree {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 54.92%;
+  max-width: 285.62px;
+  height: 18px;
+}
+
+@media only screen and (max-width: 768px) {
+  .questions--agree {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .questions--agree {
+    width: 100%;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+}
+
+.questions--label-checkbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.questions--label-checkbox::before {
+  content: "";
+  width: 18px;
+  height: 18px;
+  background-image: url("../../../assets/images/icon/cb-icon.png");
+}
+
+.questions--label-checkbox:hover {
+  cursor: pointer;
+}
+
+.questions--checkbox {
+  visibility: hidden;
+  margin: 0;
+}
+
+.questions--checkbox-text {
+  width: 90.67%;
+  font-family: "FuturaBookC";
+  font-size: 15px;
+  line-height: 22px;
+  color: #fff;
+}
+
+.questions--submit-btn {
+  width: 38.46%;
+  max-width: 200px;
+  height: 51px;
+  font-family: "FuturaDemiC";
+  font-size: 15px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+  background: #E3B873;
+  -webkit-box-shadow: 0px 5px 20px rgba(227, 184, 115, 0.1);
+          box-shadow: 0px 5px 20px rgba(227, 184, 115, 0.1);
+  color: #fff;
+}
+
+@media only screen and (max-width: 375px) {
+  .questions--submit-btn {
+    width: 100%;
+    max-width: 100%;
+    height: 51px;
+  }
+}
+/*# sourceMappingURL=questions.css.map */

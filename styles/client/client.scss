@@ -1,0 +1,104 @@
+@import '../variables';
+
+.client{
+    position: relative;
+    @include flex-column($start, $start);
+    width: 30.42%;
+    height: 455px;
+
+    &--summary{
+        @include flex-column($start, $start);
+        width: 94.68%;
+        height: 428px;
+        padding-left: 20px;
+        background: #fff;
+        @media only screen and (max-width: 960px){
+            width: 100%;
+            padding-left: 0;
+        }
+    }
+
+    &--info{
+        @include flex($start);
+        width: 100%;
+        height: 110px;
+
+    }
+    &--photo{
+        display: block;
+        width: 76px;
+        height: 76px;
+        margin-right: 23px;
+        border-radius: 50%;
+        @media only screen and (max-width: 960px){
+            width: 46px;
+            height: 46px;
+            font-size: 13px;
+            line-height: auto;
+        }
+    }
+
+    &--name{
+        font-family: Yeseva One;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 23px;
+
+        color: #181818;
+        @media only screen and (max-width: 960px){
+            width: 90%;
+            font-size: 15px;
+            line-height: auto;
+        }
+    }
+
+    &--gratitude{
+        width: 86%;
+        height: 221px;
+        font-family: "FuturaBookC";
+        font-size: 15px;
+        line-height: 180%;
+        color: #959595;
+        @media only screen and (max-width: 960px){
+            width: 90%;
+            font-size: 13px;
+            line-height: auto;
+        }
+    }
+
+    &--order{
+        position: absolute;
+        top: 400px;
+        @include flex($start);
+        width: 78.125%;
+        height: 54.03px;
+        background: #E3B873;
+        box-shadow: 5px 5px 20px rgba(227, 184, 115, 0.5);
+    }
+
+    &--order-size{
+        @include flex();
+        width: 135.09px;
+        height: 100%;
+        border-right: 0.75px solid #FFFFFF;
+    }
+
+    &--repair-time{
+        @include flex();
+        width: 158.66px;
+        height: 100%;
+    }
+
+    &--details{
+        margin-left: 15px;
+        font-family: "Yeseva One";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 17px;
+        line-height: 24px;
+        text-transform: uppercase;
+
+        color: #FFFFFF;
+    }
+}

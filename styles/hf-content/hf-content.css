@@ -1,0 +1,97 @@
+.hf-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1256px;
+    height: 37px;
+    font-family: "FuturaDemiC";
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: #E3B873;
+}
+
+@media only screen and (max-width: 375px) {
+    .hf-content {
+        width: 95.23%;
+        font-size: 12px;
+    }
+}
+
+.hf-content--button {
+    width: 12.81%;
+    max-width: 161px;
+    min-width: 95px;
+    height: 37px;
+}
+
+@media only screen and (max-width: 768px) {
+    .hf-content--button {
+        display: none;
+    }
+}
+
+.navigation {
+    width: 46.33%;
+}
+
+@media only screen and (max-width: 375px) {
+    .navigation {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .navigation {
+        -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+        flex-grow: 1;
+        margin: 0 12px;
+    }
+}
+
+.navigation--menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.navigation--link {
+    color: #fff;
+    text-decoration: none;
+}
+
+.phone--link {
+    font-family: "FuturaDemiC";
+    font-size: 14px;
+    line-height: 16px;
+    text-align: right;
+    -webkit-text-decoration-line: underline;
+    text-decoration-line: underline;
+    color: #E3B873;
+}
+
+@media only screen and (max-width: 375px) {
+    .phone--link {
+        font-family: "FuturaDemiC";
+        font-size: 12px;
+        line-height: 14px;
+        text-align: right;
+        -webkit-text-decoration-line: none;
+        text-decoration-line: none;
+        color: #FFFFFF;
+    }
+}

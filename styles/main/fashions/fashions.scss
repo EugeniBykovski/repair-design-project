@@ -1,0 +1,202 @@
+@import '../../variables';
+
+.fashions{
+    @include flex($end);
+    position: relative;
+
+    width: 100%;
+    height: 1017.86px;
+    @media only screen and (max-width: 768px){
+        height: 800px;
+    }
+    @media only screen and (max-width: 375px){
+        @include flex-column(space-around);
+        width: 100%;
+        height: 211px;
+        background: $main-bg2;
+    }
+
+    &--list-wrapper{
+        @include flex($justify: $start);
+        position: absolute;
+        top:112px;
+        
+        width: 100%;
+        height: 864px;
+
+        background: url("../../../assets/images/background/fashions-bg.png");
+        background-size: cover;
+        @media only screen and (max-width: 768px){
+            top: 0;
+        }
+        @media only screen and (max-width: 375px){
+            display: none;
+        }
+        
+    }
+
+    &--list{
+        @include flex-column($align: flex-start);
+
+        width: 25.54%;
+        max-width: 411px;
+        height: 629px;
+        padding-left: 6.94%;
+        z-index: 10;
+
+    }
+    
+    &--menu{
+        @include flex-column($align: flex-start);
+
+        width: 72.74%;
+        max-width: 299px;
+        height: 516px;
+    }
+
+    &--headline{
+        width: 100%;
+        height: 66px;
+
+        font-family: Yeseva One;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 27px;
+        line-height: 37px;
+        text-transform: uppercase;
+
+        color: #E3B873;
+        @media only screen and(max-width: 768px) {
+            font-size: 20px;
+        }
+    }
+
+    &--item{
+        @include flex-column();
+        font-family: "Proxima Nova";
+        font-size: 20px;
+        line-height: 34px;
+
+        color: #fff;
+
+        &:hover{
+            cursor: pointer;
+        }
+
+        &-selected{
+            line-height: 34px;
+            color: #E3B873;
+            border-bottom: 1px solid #E3B873;
+        }
+    }
+
+    &--examples{
+        @include flex(space-between);
+        align-self: $end;
+        width: 53%;
+        max-width: 751.11px;
+        height: 100%;
+        margin-right: 6.94%;
+
+        z-index: 10;
+        @media only screen and (max-width: 375px){
+            display: none;
+        }
+        @media only screen and (max-width: 768px){
+            align-self: center;
+            height: auto;
+        }
+    }
+
+    &--img-group1{
+        @include flex-column();
+        align-self: $end;
+        
+        width: 48%;
+        max-width: 354px;
+        height: auto;
+        margin-right: 2.5%;
+        
+    }
+
+    &--img-group2{
+        @include flex-column();
+        align-self: $start;
+        
+        width: 48%;
+        max-width: 354px;
+        height: auto;
+        margin-left: 2.5%;
+    }
+
+   
+
+        &--img1{
+            width: 100%;
+            height: 556.86px;
+            padding-bottom: 11%;
+            @media only screen and (max-width: 768px){
+                height: auto;
+            }
+        }
+        &--img2{
+            width: 100%;
+            height: 349.47px;
+            @media only screen and (max-width: 768px){
+                height: auto;
+            }
+        }
+        &--img3{
+            width: 100%;
+            height: 275px;
+            padding-bottom: 11%;
+            @media only screen and (max-width: 768px){
+                height: auto; 
+            }
+        }
+        &--img4{
+            width: 100%;
+            height: 625.23px;
+            @media only screen and (max-width: 768px){
+                height: auto;
+            }
+        }
+   
+
+    &--slide-block{
+        @media only screen and(max-width: 375px){
+            @include flex-column();
+            position: relative;
+            text-align: center;
+            width: 95.23%;
+            height: 332px;
+        }
+        display: none;
+        
+    }
+
+    &--slider{
+        position: absolute;
+        top: 42%;
+        @include flex(space-between);
+        width: 340px;
+        height: 242px;
+        &-slide{
+            width: 100%;
+            height: 100%;
+            &-img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        &-btn-next{
+            position: absolute;
+            right: 0;
+        }
+        &-btn-prev{
+            position: absolute;
+            left: 0;
+        }
+    }
+}
+

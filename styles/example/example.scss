@@ -1,0 +1,87 @@
+@import '../variables';
+
+.example{
+    position: relative;
+    width: 100%;
+    max-width: 392px;
+    height: 608px;
+
+
+    &--img{
+        width: 100%;
+        height: 69.24%;
+    }
+
+    &--description{
+        position: absolute;
+        top: 47.88%;
+        left: 8%;
+        
+        width: 84.18%;
+        height: auto;
+
+        padding-bottom: 57px;
+
+        font-family: "FuturaBookC";
+        font-size: 15px;
+        line-height: 25px;
+
+        color: #959595;
+        background: #fff;
+        
+        @media only screen and (max-width: 375px){
+            position: absolute;
+            top: 47.88%;
+            left: 0;
+        }
+    }
+
+    &--headline{
+        width: 63.63%;
+        max-width: 210px;
+
+        padding-left: 9.3%;
+
+        font-family: "Yeseva One";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 25px;
+
+        color: #363636;
+    }
+
+    
+    &--list{
+        width: 80.9%;
+        max-width: 267px;
+        min-width: 228px;
+        height: auto;
+        padding-left: 9.3%;
+
+        list-style-type: disc;
+        list-style-position: inside;
+    }
+
+    &--price{
+        @include flex();
+        position: absolute;
+        top: 90%;
+
+        width: 58.16%;
+        height: 54px;
+
+        background: #E3B873;
+        box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
+
+        font-family: "Yeseva One";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 25px;
+        text-transform: uppercase;
+
+        color: #FFFFFF;
+        
+    }
+}

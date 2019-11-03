@@ -1,0 +1,242 @@
+@import '../../variables';
+@import url('../../switcher/switcher.css');
+.projects{
+    @include flex(flex-end, flex-end);
+
+    @media only screen and (max-width: 375px){
+        @include flex-column();
+        background: $mobile-bg;;
+    }
+    width: 100%;
+    height: 655px;
+    background: $main-bg1;
+    &--completed{
+        @media only screen and (max-width: 768px){
+            
+            @include flex-column(space-around);
+            flex-direction: column;
+            width: 100%;
+            height: 100%;
+            margin-right: 0;
+
+
+        }
+        @media only screen and (max-width: 375px){
+            
+            @include flex-column(space-around);
+            flex-direction: column;
+            width: 95.23%;
+            height: 100%;
+            margin-right: 0;
+        }
+        @include flex-column(space-between, flex-start);
+
+        margin-right: 50px;
+        width: 30.69%;
+        height: 483px;
+
+        &-slide-block{
+            @media only screen and(max-width: 375px){
+                @include flex(space-between);
+                position: relative;
+                width: 95.23%;
+                height: 241.55px;
+                background: white;
+            }
+            display: none;
+            
+        }
+        &-slide{
+            width: 100%;
+            height: 100%;
+            &-img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        &-btn-next{
+            position: absolute;
+            right: 0;
+        }
+        &-btn-prev{
+            position: absolute;
+            left: 0;
+        }
+    }
+
+    &--headline{
+        @include flex();
+
+        width: 57.23%;
+        height: 66px;
+
+        @media only screen and(max-width: 768px){
+            border-bottom: 2px solid #E3B873;
+        }
+        
+        
+    }
+
+    &--headline-text{
+        font-size: 27px;
+
+        font-family: "Yeseva One";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 27px;
+        line-height: 37px;
+        letter-spacing: -0.07em;
+        text-transform: uppercase;
+
+        color: #E3B873;
+        
+        @media only screen and(max-width: 375px){
+            text-align: center;
+        }
+    }
+    &--headline-img{
+        @media only screen and(max-width: 768px){
+            display: none;
+        }
+        @include flex();
+        height: 27px;
+    }
+
+    &--headline-svg{
+        padding-top: 25px;
+    }
+
+    &--description{
+        width: 100%;
+        height: 86px;
+
+        font-size: 18px;
+        line-height: 29px;
+
+        font-family: "FuturaBookC";
+        font-size: 18px;
+        line-height: 29px;
+
+        color: #fff;
+        @media only screen and(max-width: 768px){
+            width: 60%;
+            font-family: "FuturaBookC";
+            line-height: 158.48%;
+
+            text-align: center;
+
+            color: #fff;
+        }
+        @media only screen and(max-width: 375px){
+            font-family: "FuturaBookC";
+            font-size: 14px;
+            line-height: 158.48%;
+
+            text-align: center;
+
+            color: #fff;
+        }
+    }
+
+    &--switcher-block{
+        width: 206px;
+    }
+    &--slider{
+        @media only screen and(max-width: 768px){
+            display: none;
+        }
+        position: relative;
+        @include flex(space-between, flex-start);
+        flex-direction: column;
+        width: 58.68%;
+        max-width: 845px;
+        height: 552px;
+    }
+    
+    &--navigation{
+        width: 73.72%;
+        max-width: 623px;
+        height: 24px;
+    }
+    &--menu{
+        @include flex(space-between);
+
+        width: 100%;
+        max-width: 623px;
+        height: 24px;
+    }
+
+    &--link{
+        font-family: "Yeseva One";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 19px;
+        text-transform: uppercase;
+
+        color: rgba(255, 255, 255, 0.3);
+        text-decoration: none;
+        &_checked{
+            color: #E3B873;
+            border-bottom: 1px solid #E3B873;
+        }
+    }
+
+    &--img-wrapper{
+        @include flex(space-between);
+        flex-wrap: nowrap;
+        width: 100%;
+        height: 482.38px;
+        overflow: hidden;
+    }
+
+    &--img{
+        width: 679px;
+        height: 482.38px;
+        padding-right: 21px;
+    }
+
+    &--slider-control{
+        position: absolute;
+        right: 3.15%;
+        top: 46.55%;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+}
+
+.total{
+    display: grid;
+    grid: 2fr 1fr / repeat(2, 1fr);
+    
+    grid-auto-flow: row;
+
+    &--item{
+        font-size: 15px;
+        line-height: 20px;
+
+    }
+    &--headline{
+        font-family: "Yeseva One";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 25px;
+        text-transform: uppercase;
+
+        color: #E3B873;
+    }
+
+    &--description{
+        width: 100px;
+
+        font-family: "FuturaBookC";
+        font-size: 15px;
+        line-height: 20px;
+
+        color: #fff;
+    }
+
+}
+

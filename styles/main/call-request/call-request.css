@@ -1,0 +1,200 @@
+.call-request {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 341.59px;
+  background: #fff;
+}
+
+@media only screen and (max-width: 375px) {
+  .call-request {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    height: 286px;
+    background: #232323;
+  }
+}
+
+.call-request--form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 53.40%;
+  max-width: 769px;
+  height: 100px;
+}
+
+@media only screen and (max-width: 768px) {
+  .call-request--form {
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .call-request--form {
+    width: 95.23%;
+    height: 100%;
+  }
+}
+
+.call-request--submit-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 51px;
+}
+
+@media only screen and (max-width: 375px) {
+  .call-request--submit-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 100%;
+  }
+}
+
+.call-request--submit-btn {
+  width: 26%;
+  height: 100%;
+  font-family: "FuturaDemiC";
+  font-size: 15px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+@media only screen and (max-width: 375px) {
+  .call-request--submit-btn {
+    width: 100%;
+    height: 51px;
+    position: relative;
+    top: 25px;
+  }
+}
+
+.call-request--agree-block-mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 375px) {
+  .call-request--agree-block-mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    width: 84%;
+    height: 18px;
+    color: #181818;
+  }
+}
+
+.call-request--agree-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  max-width: 285px;
+  height: 18px;
+  color: #181818;
+}
+
+@media only screen and (max-width: 375px) {
+  .call-request--agree-block {
+    display: none;
+  }
+}
+
+.call-request--label-checkbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.call-request--label-checkbox::before {
+  content: "";
+  width: 18px;
+  height: 18px;
+  background-image: url("../../../assets/images/icon/cb-icon.png");
+}
+
+.call-request--label-checkbox:hover {
+  cursor: pointer;
+}
+
+.call-request--checkbox {
+  visibility: hidden;
+  margin: 0;
+}
+
+.call-request--agree-description {
+  font-family: FuturaBookC;
+  font-size: 15px;
+}
+
+@media only screen and (max-width: 375px) {
+  .call-request--agree-description {
+    font-family: "FuturaBookC";
+    font-size: 16px;
+    line-height: 22px;
+    color: #FFFFFF;
+  }
+}
+/*# sourceMappingURL=call-request.css.map */

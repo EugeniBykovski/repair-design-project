@@ -1,0 +1,121 @@
+@import '../../variables';
+
+.call-request{
+    @media only screen and (max-width: 375px){
+        @include flex-column();
+        width: 100%;
+        height: 286px;
+        background: $mobile-bg;
+    }
+    @include flex();
+    width: 100%;
+    height: 341.59px;
+    background: $main-bg2;
+
+
+    &--form{
+        @include flex-column(space-between);
+
+        width: 53.40%;
+        max-width: 769px;
+        height: 100px;
+        @media only screen and (max-width: 768px){
+            width: 70%;
+        }
+        @media only screen and (max-width: 375px){
+            width: 95.23%;
+            height: 100%;
+        }
+
+    }
+
+    &--submit-block{
+        @media only screen and (max-width: 375px){
+            flex-direction: column;
+            height: 100%;
+        }
+        @include flex(space-between);
+
+        width: 100%;
+        height: 51px;
+
+    }
+    
+    &--submit-btn{
+        width: 26%;
+        height: 100%;
+
+        font-family: "FuturaDemiC";
+        font-size: 15px;
+        line-height: 26px;
+        text-align: center;
+        text-transform: uppercase;
+
+        @media only screen and (max-width: 375px){
+            width: 100%;
+            height: 51px;
+            position: relative;
+            top: 25px;
+        }
+    }
+
+    &--agree-block-mobile{
+        display: none;
+        @media only screen and (max-width: 375px){
+            @include flex(space-between);
+            align-self: $start;
+            width: 84%;
+            height: 18px;
+
+            color: #181818;
+        }
+    }
+    &--agree-block{
+        @include flex(space-between);
+
+        width: 100%;
+        max-width: 285px;
+        height: 18px;
+
+
+        color: #181818;
+        @media only screen and (max-width: 375px){
+            display: none;
+        }
+    }
+
+    &--label-checkbox{
+        @include flex(space-between);
+
+        width: 100%;
+        height: 100%;
+        &::before{
+            content: "";
+            width: 18px;
+            height: 18px;
+            background-image: url("../../../assets/images/icon/cb-icon.png");
+        }
+        
+        &:hover{
+            cursor: pointer;
+        }
+    }
+
+    &--checkbox{
+        visibility: hidden;
+        margin: 0        
+    }
+
+    &--agree-description{
+        font-family: FuturaBookC;
+        font-size: 15px;
+
+        @media only screen and (max-width: 375px){
+            font-family: "FuturaBookC";
+            font-size: 16px;
+            line-height: 22px;
+
+            color: #FFFFFF;
+        }
+    }
+}

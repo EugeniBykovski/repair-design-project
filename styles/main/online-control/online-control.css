@@ -1,0 +1,122 @@
+.online-control {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: 852px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#131313), color-stop(45%, #131313), color-stop(44%, #fff));
+  background: linear-gradient(to bottom, #131313 0%, #131313 45%, #fff 44%);
+}
+
+@media only screen and (max-width: 375px) {
+  .online-control {
+    height: 597px;
+    background: #232323;
+  }
+}
+
+.online-control--header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 196px;
+  height: 66.79px;
+  margin-top: 16px;
+}
+
+.online-control--headline {
+  font-family: "Yeseva One";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+@media only screen and (max-width: 375px) {
+  .online-control--headline {
+    font-size: 22px;
+    line-height: 138.6%;
+  }
+}
+
+.online-control--video-wrapper {
+  max-width: 817px;
+  max-height: 434px;
+  width: 56.74%;
+  height: auto;
+}
+
+@media only screen and (max-width: 375px) {
+  .online-control--video-wrapper {
+    width: 95.23%;
+  }
+}
+
+.online-control--inner-video-wrapper {
+  height: 100%;
+  padding-bottom: 40%;
+}
+
+@media only screen and (max-width: 375px) {
+  .online-control--inner-video-wrapper {
+    height: 100%;
+    min-height: 207px;
+    padding-bottom: 0;
+  }
+}
+
+.online-control--video {
+  width: 100%;
+  height: 100%;
+  z-index: 20;
+}
+
+.online-control--line {
+  width: 55px;
+  height: 1.54px;
+  background: #E3B873;
+  border-radius: 30px;
+}
+
+.online-control--description {
+  width: 47.29%;
+  max-width: 681px;
+  height: auto;
+  font-family: "FuturaBookC";
+  font-size: 20px;
+  line-height: 34px;
+  text-align: center;
+  color: #363636;
+}
+
+@media only screen and (max-width: 375px) {
+  .online-control--description {
+    width: 95.23%;
+    font-size: 14px;
+    line-height: 169.8%;
+    color: #fff;
+  }
+}
+/*# sourceMappingURL=online-control.css.map */

@@ -1,0 +1,33 @@
+.contacts-map {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: 954px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.8))), url("../../../assets/images/background/contacts-map-bg.png");
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../../../assets/images/background/contacts-map-bg.png");
+  background-size: cover;
+}
+
+@media only screen and (max-width: 768px) {
+  .contacts-map {
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .contacts-map {
+    height: auto;
+    background: 0;
+  }
+}
+/*# sourceMappingURL=contacts-map.css.map */

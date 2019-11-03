@@ -1,0 +1,360 @@
+@import url("../../switcher/switcher.css");
+.projects {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  width: 100%;
+  height: 655px;
+  background: #131313;
+}
+
+@media only screen and (max-width: 375px) {
+  .projects {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background: #232323;
+  }
+}
+
+.projects--completed {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-right: 50px;
+  width: 30.69%;
+  height: 483px;
+}
+
+@media only screen and (max-width: 768px) {
+  .projects--completed {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    margin-right: 0;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .projects--completed {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    flex-direction: column;
+    width: 95.23%;
+    height: 100%;
+    margin-right: 0;
+  }
+}
+
+.projects--completed-slide-block {
+  display: none;
+}
+
+@media only screen and (max-width: 375px) {
+  .projects--completed-slide-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+    width: 95.23%;
+    height: 241.55px;
+    background: white;
+  }
+}
+
+.projects--completed-slide {
+  width: 100%;
+  height: 100%;
+}
+
+.projects--completed-slide-img {
+  width: 100%;
+  height: 100%;
+}
+
+.projects--completed-btn-next {
+  position: absolute;
+  right: 0;
+}
+
+.projects--completed-btn-prev {
+  position: absolute;
+  left: 0;
+}
+
+.projects--headline {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 57.23%;
+  height: 66px;
+}
+
+@media only screen and (max-width: 768px) {
+  .projects--headline {
+    border-bottom: 2px solid #E3B873;
+  }
+}
+
+.projects--headline-text {
+  font-size: 27px;
+  font-family: "Yeseva One";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 27px;
+  line-height: 37px;
+  letter-spacing: -0.07em;
+  text-transform: uppercase;
+  color: #E3B873;
+}
+
+@media only screen and (max-width: 375px) {
+  .projects--headline-text {
+    text-align: center;
+  }
+}
+
+.projects--headline-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 27px;
+}
+
+@media only screen and (max-width: 768px) {
+  .projects--headline-img {
+    display: none;
+  }
+}
+
+.projects--headline-svg {
+  padding-top: 25px;
+}
+
+.projects--description {
+  width: 100%;
+  height: 86px;
+  font-size: 18px;
+  line-height: 29px;
+  font-family: "FuturaBookC";
+  font-size: 18px;
+  line-height: 29px;
+  color: #fff;
+}
+
+@media only screen and (max-width: 768px) {
+  .projects--description {
+    width: 60%;
+    font-family: "FuturaBookC";
+    line-height: 158.48%;
+    text-align: center;
+    color: #fff;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .projects--description {
+    font-family: "FuturaBookC";
+    font-size: 14px;
+    line-height: 158.48%;
+    text-align: center;
+    color: #fff;
+  }
+}
+
+.projects--switcher-block {
+  width: 206px;
+}
+
+.projects--slider {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 58.68%;
+  max-width: 845px;
+  height: 552px;
+}
+
+@media only screen and (max-width: 768px) {
+  .projects--slider {
+    display: none;
+  }
+}
+
+.projects--navigation {
+  width: 73.72%;
+  max-width: 623px;
+  height: 24px;
+}
+
+.projects--menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  max-width: 623px;
+  height: 24px;
+}
+
+.projects--link {
+  font-family: "Yeseva One";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.3);
+  text-decoration: none;
+}
+
+.projects--link_checked {
+  color: #E3B873;
+  border-bottom: 1px solid #E3B873;
+}
+
+.projects--img-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  width: 100%;
+  height: 482.38px;
+  overflow: hidden;
+}
+
+.projects--img {
+  width: 679px;
+  height: 482.38px;
+  padding-right: 21px;
+}
+
+.projects--slider-control {
+  position: absolute;
+  right: 3.15%;
+  top: 46.55%;
+}
+
+.projects--slider-control:hover {
+  cursor: pointer;
+}
+
+.total {
+  display: -ms-grid;
+  display: grid;
+  grid: 2fr 1fr/repeat(2, 1fr);
+  grid-auto-flow: row;
+}
+
+.total--item {
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.total--headline {
+  font-family: "Yeseva One";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: uppercase;
+  color: #E3B873;
+}
+
+.total--description {
+  width: 100px;
+  font-family: "FuturaBookC";
+  font-size: 15px;
+  line-height: 20px;
+  color: #fff;
+}
+/*# sourceMappingURL=projects.css.map */

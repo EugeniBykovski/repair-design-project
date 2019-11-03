@@ -1,0 +1,8 @@
+@import '../variables';
+@import url('../hf-content/hf-content.css');
+.header{
+    @include flex();
+    width: 100%;
+    height: 83px;
+    background: $main-bg1;
+}

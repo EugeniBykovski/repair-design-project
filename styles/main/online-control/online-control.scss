@@ -1,0 +1,93 @@
+@import '../../variables';
+
+.online-control{
+    @include flex-column(space-around);
+
+    width: 100%;
+    height: 852px;
+    background: linear-gradient(to bottom, $main-bg1 0%, $main-bg1 45%, $main-bg2 44%);
+
+    @media only screen and (max-width: 375px){
+        height: 597px;
+        background: $mobile-bg;
+    }
+    &--header{
+        @include flex(space-between);
+        flex-direction: column;
+        width: 196px;
+        height: 66.79px;
+        margin-top: 16px;
+    }
+
+    &--headline{
+        font-family: "Yeseva One";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 28px;
+        text-align: center;
+        text-transform: uppercase;
+
+        color: #FFFFFF;
+
+        @media only screen and (max-width: 375px){
+            font-size: 22px;
+            line-height: 138.6%;
+        }
+
+    }
+
+    &--video-wrapper{
+        max-width: 817px;
+        max-height: 434px;
+        width: 56.74%;
+        height: auto;
+        
+        @media only screen and (max-width: 375px){
+            width: 95.23%;
+        }
+    }
+    &--inner-video-wrapper{
+        height: 100%;
+        padding-bottom: 40%;
+        @media only screen and (max-width: 375px){
+            height: 100%;
+            min-height: 207px;
+            padding-bottom: 0;
+        }
+    }
+    &--video{
+        width: 100%;
+        height: 100%;
+        
+        z-index: 20;
+    }
+
+    &--line{
+        width: 55px;
+        height: 1.54px;
+        background: #E3B873;
+        border-radius: 30px;
+    }
+
+
+    &--description{
+        width: 47.29%;
+        max-width: 681px;
+        height: auto;
+
+        font-family: "FuturaBookC";
+        font-size: 20px;
+        line-height: 34px;
+        text-align: center;
+
+        color: #363636;
+
+        @media only screen and (max-width: 375px){
+            width: 95.23%;
+            font-size: 14px;
+            line-height: 169.8%;
+            color: $main-bg2;
+        }
+    }
+}

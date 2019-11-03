@@ -1,0 +1,24 @@
+@import '../variables';
+@import url('./main-header/main-header.css');
+@import url('./projects/projects.css');
+@import url('./online-control/online-control.css');
+@import url('./call-request/call-request.css');
+@import url('./repair-type/repair-type.css');
+@import url('./advantage/advantage.css');
+@import url('./fashions/fashions.css');
+@import url('./design-projects/design-projects.css');
+@import url('./work-steps/work-steps.css');
+@import url('./team/team.css');
+@import url('./clients/clients.css');
+@import url('./questions/questions.css');
+@import url('./contacts-map/contacts-map.css');
+@import url('./contacts/contacts.css');
+@import url('./map/map.css');
+
+.main{
+    @include flex();
+    flex-direction: column;
+    
+    width: 100%;
+    background: $main-bg2;
+}
